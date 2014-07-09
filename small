@@ -1,0 +1,58 @@
+simple lock client
+
+Add_reply clt_nonce:1741170485	xid:1	sz:28	cb_present:1
+lock client port :3772 init OK
+
+Add_reply clt_nonce:411250859	xid:1	sz:28	cb_present:1
+lock client port :3772 init OK
+
+Add_reply clt_nonce:1705635220	xid:1	sz:28	cb_present:1
+lock client port :3772 init OK
+
+Add_reply clt_nonce:2139596128	xid:1	sz:28	cb_present:1
+lock client port :3772 init OK
+
+Add_reply clt_nonce:1460369175	xid:1	sz:28	cb_present:1
+lock client port :3772 init OK
+
+Add_reply clt_nonce:2002869215	xid:1	sz:28	cb_present:1
+lock client port :3772 init OK
+acquire a release a acquire a release a
+Check -- clt_nonce:1741170485	xid:2	xid_rep:1	small:2	stat:NEW
+acquire request from clt 1741170485
+clt 0:free
+
+
+Add_reply clt_nonce:1741170485	xid:2	sz:28	cb_present:1
+ret:0
+Here!Check -- clt_nonce:1741170485	xid:3	xid_rep:2	small:3	stat:NEW
+release request from clt 1741170485
+
+Add_reply clt_nonce:1741170485	xid:3	sz:28	cb_present:1
+Check -- clt_nonce:1741170485	xid:1	xid_rep:0	small:1	stat:NEW
+
+Add_reply clt_nonce:1741170485	xid:1	sz:28	cb_present:1
+Check -- clt_nonce:1741170485	xid:4	xid_rep:3	small:4	stat:NEW
+acquire request from clt 1741170485
+clt 0:free
+
+
+Add_reply clt_nonce:1741170485	xid:4	sz:28	cb_present:1
+ret:0
+Check -- clt_nonce:1741170485	xid:5	xid_rep:4	small:5	stat:NEW
+release request from clt 1741170485
+
+Add_reply clt_nonce:1741170485	xid:5	sz:28	cb_present:1
+acquire a acquire b release b release a
+Check -- clt_nonce:1741170485	xid:6	xid_rep:5	small:6	stat:NEW
+acquire request from clt 1741170485
+clt 0:free
+
+
+Add_reply clt_nonce:1741170485	xid:6	sz:28	cb_present:1
+ret:0
+Check -- clt_nonce:1741170485	xid:4	xid_rep:3	small:4	stat:NEW
+acquire request from clt 1741170485
+clt 1741170485:locked
+
+ret:-1

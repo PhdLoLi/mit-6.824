@@ -1,0 +1,22 @@
+starting server on port 23460 RPC_HEADER_SZ 24
+simple_tests
+   -- string concat RPC .. ok
+   -- small request, big reply .. ok
+   -- no suprious timeout .. ok
+   -- no suprious timeout .. ok
+   -- huge 1M rpc request .. ok
+   -- rpc timeout .. ok
+simple_tests OK
+start concurrent_test (10 threads) ... OK
+start lossy_test ...DONE!
+DONE!
+.. OK
+failure_test
+   -- create new client and try to bind to failed server .. failed ok
+   -- call recovered server with old client .. failed ok
+   -- delete existing rpc client, create replacement rpc client .. ok
+   -- concurrent test on new rpc client w/ 10 threads ..ok
+   -- delete existing rpc client and server, create replacements.. ok
+   -- concurrent test on new client and server w/ 10 threads ..ok
+failure_test OK
+rpctest OK
