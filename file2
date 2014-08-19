@@ -1,0 +1,42 @@
+test6: 4-process lock_server, send signal 2 to first server, kill fourth server, restart fourth server, check logs
+Start lock_server on 13774
+   Done: 13774 is in >=1 views in paxos-13774.log
+Start lock_server on 25855
+   Done: 13774 is in >=2 views in paxos-13774.log
+   Done: 25855 is in >=1 views in paxos-25855.log
+Start lock_server on 36663
+   Done: 13774 is in >=3 views in paxos-13774.log
+   Done: 25855 is in >=2 views in paxos-25855.log
+   Done: 36663 is in >=1 views in paxos-36663.log
+Start lock_server on 37157
+   Done: 13774 is in >=4 views in paxos-13774.log
+   Done: 25855 is in >=3 views in paxos-25855.log
+   Done: 36663 is in >=2 views in paxos-36663.log
+   Done: 37157 is in >=1 views in paxos-37157.log
+Sending paxos breakpoint 2 to first server on port 13774
+Kill fourth server (PID: 16953) on port 37157
+Restarting fourth server on port 37157
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Waiting for 25855 to be present in >=6 views in paxos-25855.log (Last view: done 6 25855 36663 )
+   Done: 25855 is in >=6 views in paxos-25855.log
+   Done: 36663 is in >=5 views in paxos-36663.log
+   Done: 25855 is in >=6 views in paxos-25855.log
+   Done: 36663 is in >=5 views in paxos-36663.log
+   Done: 37157 is in >=2 views in paxos-37157.log
+tests done OK

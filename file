@@ -1,0 +1,42 @@
+test7: 4-process lock_server, send signal 2 to first server, kill fourth server, kill other servers, restart other servers, restart fourth server, check logs
+Start lock_server on 11583
+   Done: 11583 is in >=1 views in paxos-11583.log
+Start lock_server on 33443
+   Done: 11583 is in >=2 views in paxos-11583.log
+   Done: 33443 is in >=1 views in paxos-33443.log
+Start lock_server on 34085
+   Done: 11583 is in >=3 views in paxos-11583.log
+   Done: 33443 is in >=2 views in paxos-33443.log
+   Done: 34085 is in >=1 views in paxos-34085.log
+Start lock_server on 38168
+   Done: 11583 is in >=4 views in paxos-11583.log
+   Done: 33443 is in >=3 views in paxos-33443.log
+   Done: 34085 is in >=2 views in paxos-34085.log
+   Done: 38168 is in >=1 views in paxos-38168.log
+Sending paxos breakpoint 2 to first server on port 11583
+Kill fourth server (PID: 19003) on port 38168
+Kill third server (PID: 18961) on port 34085
+Kill second server (PID: 18926) on port 33443
+Restarting second server on port 33443
+Restarting third server on port 34085
+Restarting fourth server on port 38168
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )
+   Waiting for 33443 to be present in >=5 views in paxos-33443.log (Last view: done 5 33443 34085 38168 )

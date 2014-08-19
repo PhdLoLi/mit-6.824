@@ -18,7 +18,7 @@ class lock_server {
   pthread_mutex_t lock_mutex;
   pthread_cond_t lock_cond;
   map<int, string> lock_map;
-  map<int, int> who_map;
+  map<int, int> owner_map;
 
  public:
   lock_server();

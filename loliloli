@@ -1,0 +1,106 @@
+位于分支 master
+尚未暂存以备提交的变更：
+	修改:         GNUmakefile
+	修改:         lock_demo
+	修改:         lock_protocol.h
+	修改:         lock_server
+	修改:         lock_server.cc
+	修改:         lock_server.h
+	修改:         lock_smain.cc
+	修改:         lock_smain.d
+	修改:         lock_tester
+	修改:         lock_tester.cc
+	修改:         lock_tester.d
+	修改:         rpc/connection.cc
+	修改:         rpc/connection.h
+	修改:         rpc/rpc.h
+	修改:         rpc/rpctest
+	删除:         test
+
+未跟踪的文件:
+	.gitbk/
+	config.cc
+	config.d
+	config.h
+	core
+	extent_client.cc
+	extent_client.d
+	extent_client.h
+	extent_client_bk.cc
+	extent_protocol.h
+	extent_server
+	extent_server.cc
+	extent_server.d
+	extent_server.h
+	extent_smain.cc
+	extent_smain.d
+	file
+	file2
+	fuse.cc
+	fuse.d
+	fuse_bk.cc
+	haha
+	handle.cc
+	handle.d
+	handle.h
+	lab2-result
+	lab5
+	lab6
+	lab6.sh
+	lab66.sh
+	lock_client_cache.cc
+	lock_client_cache.d
+	lock_client_cache.h
+	lock_client_cache_done.cc
+	lock_server-11487-11487.log
+	lock_server-11487-38046.log
+	lock_server_cache.cc
+	lock_server_cache.d
+	lock_server_cache.h
+	lock_server_cache_RELEASING.cc
+	lock_server_cache_done.cc
+	lock_smain.cc.bk
+	lock_smain_lab3.cc
+	log.cc
+	log.d
+	log.h
+	loliloli
+	mkfs.sh
+	paxos-11487.log
+	paxos.cc
+	paxos.d
+	paxos.h
+	paxos_protocol.h
+	rsm.cc
+	rsm.d
+	rsm.h
+	rsm_protocol.h
+	rsm_state_transfer.h
+	rsm_tester
+	rsm_tester.cc
+	rsm_tester.d
+	rsm_tester.pl
+	rsmtest_client.cc
+	rsmtest_client.d
+	rsmtest_client.h
+	split.cc
+	start.sh
+	stop.sh
+	temp
+	test-lab-2-a.pl
+	test-lab-2-b.pl
+	test-lab-3-a.pl
+	test-lab-3-b
+	test-lab-3-b.c
+	test-lab-3-c
+	test-lab-3-c.c
+	test1.sh
+	tprintf.h
+	yfs1test
+	yfs_client
+	yfs_client.cc
+	yfs_client.d
+	yfs_client.h
+	yfs_client_lockfree.cc
+
+修改尚未加入提交

@@ -1,0 +1,17 @@
+./lock_server 11487 11487
+1407122643159:	acceptor init here!
+logread
+init v_a: 
+1407122643160:	propser init here!
+1407122643160:	get_view(1): returns 11487
+1407122643160:	config::reconstruct: 1 11487
+1407122643160:	commit_change: new view (1)  last vs (0,0) 11487 insync 0
+1407122643160:	get_view(1): returns 11487
+1407122643160:	get_view(0): returns 
+1407122643160:	set_primary: primary stays 11487
+1407122643160:	heartbeater: go to sleep
+1407122643160:	get_view(1): returns 11487
+1407122643160:	get_view(1): returns 11487
+1407122643160:	recovery: sync vid_insync 1
+1407122643160:	recovery: sync done
+1407122643160:	recovery: go to sleep 0 0

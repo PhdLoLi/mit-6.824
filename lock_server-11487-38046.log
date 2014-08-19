@@ -1,0 +1,9 @@
+./lock_server 11487 38046
+1407122644166:	acceptor init here!
+logread
+init v_a: 
+1407122644166:	propser init here!
+1407122644166:	heartbeater: go to sleep
+1407122644167:	get_view(0): returns 
+1407122644167:	rsm::join: 11487 mylast (0,0)
+1407122644167:	handler_mgr::get_handle trying to bind...11487

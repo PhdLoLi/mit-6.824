@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[branch "master"]
+[remote "origin"]
+	url = https://github.com/PhDLoLi/mit-6.824.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
